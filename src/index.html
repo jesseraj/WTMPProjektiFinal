@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!--Custom style sheet-->
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+  </head>
+
+  <body>
+    <main>
+      <!-- -------------------------------------------------------------------------------------- -->
+      <!-- Sivun alku -->
+      <header>
+        <h1 id="Otsikko">Metropolia</h1>
+        <h2 id="aliOtsikko">Karamalmi</h2>
+        <div id="clock" onload="currentTime()"></div>
+      </header>
+
+      <!-- -------------------------------------------------------------------------------------- -->
+      <!-- Tiedotteet -->
+      <section class="info">
+        <div id="metropolia-data">
+          <ul class="ajankohtaista">
+             <li><a href="https://metropolia.fi/fi/metropoliasta/ajankohtaista/uutiset/ukrainan-tilanne-erityinen-huomio-opiskelijoiden-hyvinvointiin" target="_blank">Ukrainan tilanne - erityinen huomio opiskelijoiden hyvinvointiin   |   </a></li>
+             <li><a href="https://metropolia.fi/fi/metropoliasta/ajankohtaista/uutiset/ammattikorkeakoulut-osoittavat-tukensa-ukrainalle-korkeakouluyhteisossa-tarvitaan-malttia" target="_blank">Ammattikorkeakoulut osoittavat tukensa Ukrainalle   |   </a></li>
+             <li><a href="https://www.metropolia.fi/fi/metropoliasta/ajankohtaista/uutiset/merkittava-avaus-korkean-osaamisen-viennille-suomen-historian-suurin-tilaustutkintojen-kauppa-keniaan" target="_blank">Siemens Healthineers ja Metropolia Ammattikorkeakoulu edistävät yhteistyössä kestävää hyvinvointia   |   </a></li>                <li><a href="https://www.metropolia.fi/fi/metropoliasta/ajankohtaista/uutiset/merkittava-avaus-korkean-osaamisen-viennille-suomen-historian-suurin-tilaustutkintojen-kauppa-keniaan" target="_blank">Suomen historian suurin tilaustutkintojen kauppa Keniaan   |   </a></li>
+           </ul>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------------------- -->
+      <!-- HSL-Aikataulut -->
+        <section id="hsl-page">
+          <h2 class="lootaOtsikko">HSL-Aikataulut</h2>
+          <div id="hsl-grid">
+            <h2>Mistä</h2>
+            <h2>Minne</h2>
+            <h2>Lähtee (min)</h2>
+            <div id="hsl-data"></div>
+            <div id="hsl-data2"></div>
+            <div id="hsl-data3"></div>
+          </div>
+        </section>
+
+      <!-- -------------------------------------------------------------------------------------- -->
+      <!-- Ruokalistat -->
+      <section id="lunch-page">
+        <h2 class="lootaOtsikko">Fazer Karaportti</h2>
+          <div class="restaurant-box">
+            <ul id="fazer">
+            </ul>
+          </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------------------- -->
+      <!-- QR-Koodi -->
+      <img src="./assets/img/frame.png" id="qrKoodi" alt="qr-koodi mobiiliin">
+
+    </main>
+  </body>
+</html>
